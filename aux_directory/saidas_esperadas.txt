@@ -1,0 +1,90 @@
+1.
+var n : i32 = 1;
+var value : i32 = 1;
+while ( n < 10 )
+{
+    value = value * n;
+    @print( value );
+    n = n + 1;
+}
+
+2.
+@print( 3 + 4 * -5 );
+@print( 3.4 - 5.6 / -7.8 );
+@print( 'x' );
+@print( '\n' );
+const pi : f64 = 3.14159;
+const tau = 2.0 * pi;
+var r : f64;
+var a : f64;
+r = 2.0;
+a = pi * r * r;
+var c : bool = true;
+c = a < 100.0;
+var d = a > 0.0 and a < 10.0;
+@print( d );
+if ( a > 0.0 )
+{
+    @print( a );
+}
+else
+{
+    @print( -a );
+}
+var n = 0;
+while ( n < 10 )
+{
+    @print( n );
+    n = n + 1;
+}
+n = 0;
+while ( true )
+{
+    n = n + 1;
+    if ( n > 10 )
+    {
+        break;
+    }
+    if ( n == 5 )
+    {
+        continue;
+    }
+    @print( n );
+}
+
+3.
+while ( S != 'A' )
+{
+    S = S + 1;
+}
+S = 'A-Z';
+@print( S );
+S = 'Hello world!';
+@print( S );
+
+4.
+@print( 2 + 3 * -4 );
+@print( 2.0 - 3.0 / -4.0 );
+@print( -2 + 3 );
+@print( 2 * 3 + -4 );
+
+5.
+const pi = 3.14159;
+var tau : f64;
+tau = 2.0 * pi;
+@print( tau );
+
+6.
+var a : i32 = 2;
+var b : i32 = 3;
+if ( a < b )
+{
+    @print( a );
+}
+else
+{
+    @print( b );
+}
+
+7.
+
