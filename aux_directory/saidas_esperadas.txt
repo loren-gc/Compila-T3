@@ -87,4 +87,486 @@ else
 }
 
 7.
+const n = 10;
+var x = 1;
+var fact = 1;
+while ( x < n )
+{
+    fact = fact * x;
+    @print( fact );
+    x = x + 1;
+}
 
+8.
+var a : i32 = 1;
+var b : i32 = 1;
+var t : i32;
+var n : i32 = 0;
+const LAST = 20;
+while ( n < LAST )
+{
+    @print( a );
+    t = a + b;
+    a = b;
+    b = t;
+    n = n + 1;
+}
+
+9.
+var a : i32 = 2;
+a = a + 1;
+var b : i32 = 8;
+var c : i32 = 3;
+var d : i32 = c * a + b;
+
+10.
+var a : i32 = 1;
+var b : i32 = 0;
+if ( a >= 1 and a <= 10 )
+{
+    b = b + 1;
+}
+else
+{
+    b = b - 1;
+}
+
+11.
+var a : i32 = 5;
+while ( a > 0 )
+{
+    @print( "Hello world\n" );
+    a = a - 1;
+}
+a = 4;
+while ( a > 0 )
+{
+    @print( a );
+    a = a - 1;
+    var b : i32 = 4;
+    while ( b > 0 )
+    {
+        @print( a * b );
+        b = b - 1;
+    }
+}
+
+12.
+const n1 : i32 = 2;
+const n2 : i32 = 1000;
+var i : i32;
+var j : i32;
+var flag : i32;
+i = n1;
+while ( i < n2 )
+{
+    flag = 1;
+    j = 2;
+    while ( j < i / 2 )
+    {
+        if ( i % j == 0 )
+        {
+            flag = 0;
+            break;
+        }
+        j = j + 1;
+    }
+    if ( flag == 1 )
+    {
+        @print( i, " " );
+    }
+    i = i + 1;
+}
+
+13.
+var a : int;
+
+14.
+1;
+
+15;
+var b : i32;
+var x : i32;
+@print( total );
+
+16;
+var x : i32;
+var y : i32;
+var total : i32;
+var diff : i32;
+var myint : i32 = 123456;
+var i : i32 = 0;
+while ( i < 10 )
+{
+    var j : i32 = 10;
+    while ( j > 0 )
+    {
+        @print( i );
+        j = j - 1;
+    }
+    i = i + 1;
+}
+x = -10;
+y = 20;
+x = x * 3 / 2;
+total = x + y;
+diff = x - y;
+rem = x % y;
+@print( total );
+
+17.
+@print( 1 );
+
+18.
+var c : u8 = '';
+while ( c != 'A' )
+{
+    c = c + 1;
+}
+c = 'A-Z';
+@print( c );
+
+19.
+const phoenix_number = 142857;
+@print( phoenix_number, '\n' );
+
+20.
+;
+
+21.
+var count = 1;
+while ( count < 10 )
+{
+    @print( count, '\n' );
+    count = count + 1;
+}
+
+22.
+i = 1;
+while ( i * i <= 100 )
+{
+    @print( i * i, '\n' );
+    i = i + 1;
+}
+
+23.
+a = -1 * -1 * 5 * 15 / 10;
+@print( a, '\n' );
+b = -a;
+@print( b, '\n' );
+@print( -b, '\n' );
+@print( -1, '\n' );
+
+24.
+@print( ---------------------------------+++5, '\n' );
+@print( 3 + 2 * 2, '\n' );
+if ( 1 )
+{
+    if ( 1 )
+    {
+        if ( 1 )
+        {
+            if ( 1 )
+            {
+                if ( 1 )
+                {
+                    @print( 15, '\n' );
+                }
+            }
+        }
+    }
+}
+
+25.
+var a : i32 = 1071;
+var b : i32 = 1029;
+while ( b != 0 )
+{
+    var new_a : i32 = b;
+    b = a % b;
+    a = new_a;
+}
+@print( a );
+
+26.
+var n : i32 = 12;
+var result : i32 = 1;
+var i : i32 = 1;
+while ( i <= n )
+{
+    result = result * i;
+    i = i + 1;
+}
+@print( result );
+
+27.
+var n : i32 = 44;
+var i : i32 = 1;
+var a : i32 = 0;
+var b : i32 = 1;
+while ( i < n )
+{
+    var w : i32 = a + b;
+    a = b;
+    b = w;
+    i = i + 1;
+}
+@print( w, '\n' );
+
+28.
+var count : i32 = 1;
+var n : i32 = 1;
+const limit : i32 = 100;
+while ( n < limit )
+{
+    var k : i32 = 3;
+    var p : i32 = 1;
+    n = n + 2;
+    while ( k * k <= n and p )
+    {
+        p = n / k * k != n;
+        k = k + 2;
+    }
+    if ( p )
+    {
+        @print( n, " is prime\n" );
+        count = count + 1;
+    }
+}
+@print( count, '\n' );
+
+29.
+var left_edge : i32 = -420;
+var right_edge : i32 = 300;
+var top_edge : i32 = 300;
+var bottom_edge : i32 = -300;
+var x_step : i32 = 7;
+var y_step : i32 = 15;
+const max_iter : i32 = 200;
+var y0 : i32 = top_edge;
+while ( y0 > bottom_edge )
+{
+    var x0 : i32 = left_edge;
+    while ( x0 < right_edge )
+    {
+        var y : i32 = 0;
+        var x : i32 = 0;
+        var the_char : u8 = ' ';
+        var i : i32 = 0;
+        while ( i < max_iter )
+        {
+            var x_x : i32 = x * x / 200;
+            var y_y : i32 = y * y / 200;
+            if ( x_x + y_y > 800 )
+            {
+                the_char = '0' + i;
+                if ( i > 9 )
+                {
+                    the_char = '@';
+                }
+                i = max_iter;
+            }
+            y = x * y / 100 + y0;
+            x = x_x - y_y + x0;
+            i = i + 1;
+        }
+        @print( the_char );
+        x0 = x0 + x_step;
+    }
+    @print( '\n' );
+    y0 = y0 - y_step;
+}
+
+30.
+var n : i32 = 0;
+while ( true )
+{
+    n = n + 1;
+    if ( n == 5 )
+    {
+        continue;
+    }
+    @print( n );
+    if ( n > 10 )
+    {
+        break;
+    }
+}
+@print( -1 );
+
+31.
+const newline = '\n';
+@print( "hello", newline, "world", newline );
+
+32.
+var x : i32 = -3;
+if ( x > 0 )
+{
+    @print( x );
+}
+else
+{
+    @print( -x );
+}
+
+33.
+const fa = 1.0;
+var fb : f64 = 2.0;
+var fc : f64;
+fc = fa + fb + 3.0;
+@print( fc );
+@print( fa + fb );
+@print( fa - fb );
+@print( fb * fc );
+@print( fc / fb );
+@print( +fa );
+@print( -fa );
+@print( fa + fb * fc );
+
+34.
+const a = 1;
+var b : i32 = 2;
+var c : i32;
+c = a + b + 3;
+@print( c );
+@print( a + b );
+@print( a - b );
+@print( b * c );
+@print( c / b );
+@print( +a );
+@print( -a );
+@print( -a + b );
+@print( a + b * c );
+
+35.
+const xmin = -2.0;
+const xmax = 1.0;
+const ymin = -1.5;
+const ymax = 1.5;
+const width = 80.0;
+const height = 40.0;
+const threshhold = 1000;
+var dx : f64 = xmax - xmin / width;
+var dy : f64 = ymax - ymin / height;
+var y : f64 = ymax;
+var x : f64;
+var _x : f64;
+var _y : f64;
+var xtemp : f64;
+var n : i32;
+var in_mandel : bool;
+while ( y >= ymin )
+{
+    x = xmin;
+    while ( x < xmax )
+    {
+        _x = 0.0;
+        _y = 0.0;
+        n = threshhold;
+        in_mandel = true;
+        while ( n > 0 )
+        {
+            xtemp = _x * _x - _y * _y + x;
+            _y = 2.0 * _x * _y + y;
+            _x = xtemp;
+            n = n - 1;
+            if ( _x * _x + _y * _y > 4.0 )
+            {
+                in_mandel = false;
+                n = 0;
+            }
+        }
+        if ( in_mandel )
+        {
+            @print( '*' );
+        }
+        else
+        {
+            @print( '.' );
+        }
+        x = x + dx;
+    }
+    @print( '\n' );
+    y = y - dy;
+}
+
+36.
+var a : u8 = 'a';
+var b : u8 = 'b';
+@print( a < b );
+@print( a <= b );
+@print( a > b );
+@print( a >= b );
+@print( a == b );
+@print( a != b );
+
+37.
+var a : f64 = 2.0;
+var b : f64 = 3.0;
+@print( a < b );
+@print( a <= b );
+@print( a > b );
+@print( a >= b );
+@print( a == b );
+@print( a != b );
+@print( a < b and a > b );
+@print( a < b or a > b );
+@print( !a < b );
+@print( true );
+@print( false );
+@print( !a < b or false );
+@print( 2.0 < 3.0 or 3.0 > 4.0 or 10.0 < 1.0 );
+
+38.
+var a : i32 = 2;
+var b : i32 = 3;
+@print( a < b );
+@print( a <= b );
+@print( a > b );
+@print( a >= b );
+@print( a == b );
+@print( a != b );
+@print( a < b and a > b );
+@print( a < b or a > b );
+@print( !a < b );
+@print( true );
+@print( false );
+@print( !a < b or false );
+@print( 2 < 3 or 3 > 4 or 10 < 1 );
+var c : bool = true;
+var d : bool = false;
+@print( c and d );
+@print( c or d );
+@print( !c );
+
+39.
+var x = 1;
+var y = 0;
+@print( true or x / y == 0 );
+@print( false and x / y == 0 );
+
+40.
+@print( 2 + 2.5 );
+@print( -"c" );
+var x : i32 = 2.5;
+var y : i32;
+var y : i32;
+var z : i32;
+z = 4.5;
+w = 4.5;
+const pi = 3.14159;
+pi = 2.71828;
+if ( 2 )
+{
+}
+else
+{
+}
+while ( 2.5 )
+{
+}
+@print( i32 );
+int = 2;
+var i32 : d;
+break;
+continue;
